@@ -56,7 +56,7 @@ def print_menu():
 
 def deposit(cardHolder):
   try:
-    deposit = float(input("How much € would you like to deposit: "))
+    deposit = float(input("How much € would you like to deposit:\n "))
     cardHolder.set_balance(cardHolder.get_balance() + deposit)
     print("Thank you for your deposit. Your new balance is: €", str(cardHolder.get_balance()))
   except:
@@ -64,7 +64,7 @@ def deposit(cardHolder):
 
 def withdraw(cardHolder):
   try:
-    withdraw = float(input("How much € would you like to withdraw: "))
+    withdraw = float(input("How much € would you like to withdraw:\n "))
     #Chkesk if user has enough mony
     if(cardHolder.get_balance() < withdraw):
       print("Insufficient balance :(")
@@ -92,7 +92,7 @@ if __name__ == "__main__":
   debitCardNum = ""
   while True:
     try:
-      debitCardNum = input("\nPlease insert your debit card: ")
+      debitCardNum = input("\nPlease insert your debit card:\n ")
       #Check against repo
       debitMatch = [holder for holder in list_of_cardHolders if holder.cardNum == debitCardNum]
       if(len(debitMatch) > 0):
@@ -107,7 +107,7 @@ if __name__ == "__main__":
 is_on = True
 while is_on:
   try:
-    userPin = int(input("\nPlease enter your pin: ").strip())
+    userPin = int(input("\nPlease enter your pin:\n ").strip())
     if(current_user.get_pin() == userPin):
       is_on = False
     else:
