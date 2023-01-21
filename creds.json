@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "atm-banking",
+  "private_key_id": "8f9a4ba021524201c65a1059153418c96d2e1fd3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1LK8pPHw0rC8+\njlkYTg7KFayLYtt80a1mSFcUZ0EBKwUMn/ghqYhOmmVI0MHzY6hAI+4lQA+UhA2P\ne59bG7tgrh72YirvHMac2zuyF3rQwaD/7maenueBk0muV89rBkPvigC8+4I31pVM\nuDckt59kvWXrlY8vyBJ2O5cLQay0s+PFVRtnsmEH3fHUQkz5L4OMUK1nTYQu8ODJ\nPhsOQw3/W4VcWMNssfJsVfInUlhFZ1/fOmkFpl36LUaahrhKPy+F73YhCpC1gN87\nznphu/0AuJCTty1KkS9fAX7aoIgvnG5Ub8o3vF8F8/UMUq+GjI5fv5pQPX8WRyGa\nP24fLlBfAgMBAAECggEAHFRMC2RO06RSOt43+5SbvBO0MujBWKd8uAVQayX+Gc2n\n8M0ZbUISHfWx0rdPLIdaaV/KPtQ2hiA5R+9VAAJlGVKrZWv85KjDkbFiMzsiqX6C\ny0zJimdfMc6zHb999RvksZG1rddHXwMpvfZW1mH0BY+Ws/C4lAhygpRXePDLAvI9\n9XuCaxSjRRBNOQRauh5TEANEnjdbUwA4VSYDC6rABA8q1m9VeF0zyDrLTg944fbV\n6qCZbGciaygfLOSThucySuU/miR0s690GA4eG/6YEpbUL1HU0IITGL6dlNoCGlBo\nWKq9XPnW633yGv2FJCejPV4DVYPTrXJZrpfs5dETYQKBgQD5P6sWCxw+4rwWbjLu\njM91M1wR3VrkitKdEVNK08LnZ4Ug9ObUE8GQxoB+n3YkiaEFe4UFkhl5P3SjQlqq\nG+PCpxHGs4FDjRlf77V7HdaIdjQzNhO1w4LcSussk3gKK7Cd2pFc+Oe0AbvdXoA3\nT2c65Zqcv3y8hVkks9ZASs1mEQKBgQC6FPp8+VnchXRFgMAo1+KWTc46l0v1ud0D\nbIxjN9lu+h4dt4oE8FV13zFvi7AYSOjWrTDNmuxxbNMLF2S6O2EZdswJOdLXhpRz\n05MCj1jkYtdEQYA5KE3+vOBYZ0LU/fzik8n5gYAxNS1vf4hns9ujV5sPP1F4zEBO\nbpxA5ZMfbwKBgQDwU5KMS6QtgoOnARR87SqvsBjrZMraKHzRU75DHRIF+8viriDP\nhkkSZkPJU8ofitDGr4XgjDGhtiypqjYvZXrj2iGKvNQ7pRY9aa1MC8YqiAbnBhJV\nJTHNZTODJKIO9Hd0jSWyRpFrAGz7Er6AFkDMCk1dLEmCoPUGLZy9GyMXcQKBgQCc\nj7IBHDrDE3W0VJNYyerW0zfEjC9Y27xceSPVBtRmTwKvthDl/t+ogNUzKLBMfmuI\n08bP9p0hAZK/LjuNhRA5QH6C9Ke0toKIwWZbLQh5f7/mqcWcUZDt1zRarObKFbiD\nWh0BVDfrLva/bOnzdpxBXiAUQA3oONGSK/ZDk+So+QKBgB1twiGFerloAYN14HzT\nYJlsM9jxNz/1cgIwqTurjXkMQnV12B2InlklsDaFe+eLm7s6wxMAkr1cs+HqVYuo\n82yDyuvQ8sSlBRTX+CeZJ4UcR0X79OWteeWhIm6lJE4gLfxwG+Q6ELU9lw4JnF9P\nBKOLJciKuT/WMFMJ2GoylJLr\n-----END PRIVATE KEY-----\n",
+  "client_email": "sergiy@atm-banking.iam.gserviceaccount.com",
+  "client_id": "106999455227456808192",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sergiy%40atm-banking.iam.gserviceaccount.com"
+}
