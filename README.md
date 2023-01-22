@@ -20,6 +20,8 @@
 </ul>
 
 
+
+
 <h3 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Who is running this zoo?<br></h3>
 
 
@@ -155,3 +157,46 @@ Screen number - is a link to a string with a text description of the screen that
 <p>The set of states, screens, FITs, timers is called an ATM scenario. Each scenario has its own number. After loading the ATM and connecting it to the network, it sends a message to the host in which it reports its ID and configuration number. If the configuration needs to be updated, the host switches the ATM to the “Out Of Service” mode and starts loading the necessary parameters of the new configuration. The last parameter is the configuration number. In a similar way, the keys for encrypting the pin block, for popping, and master keys are loaded.</p>
 
 <p>Here, in a nutshell, is how an ATM works. I hope this information is useful to someone.</p>
+
+
+<h2 dir="auto"><a id="user-content-uxui" class="anchor" aria-hidden="true" href="#uxui"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>UX/UI</h2>
+
+
+<ul dir="auto">
+<li>The program should be intuitive to navigate<br></li>
+<li>The information that appears on the screen should be relevant for each step of the order<br></li>
+<li>Instructions should appear to sugerate the user what values to enter<br></li>
+<li>The important information should be highlighted to offer a better user experience<br></li>
+<li>The program should access the right datasheet for every step <br></li>
+<li>The program should update the Orders data sheet with the right values<br></li>
+<li>The program should give the possibility of checking the status of the option</li>
+</ul>
+
+<h4 dir="auto"><a id="user-content-user-stories" class="anchor" aria-hidden="true" href="#user-stories"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>User Stories<br></h4>
+
+<ul dir="auto">
+<li>As a user, I want to see information about the options that the ATM offer<br></li>
+<li>As a user, I want to be able to check balance<br></li>
+<li>As a user, I want to be able to add deposit money<br></li>
+<li>As a user, I want to be able to withdraw money<br></li>
+<li>As a user, I want to be able to exit the program and return my card<br></li>
+<li>As a user, I want to see logo of my bank<br></li>
+<li>As a user, I want to see my balance after deposit<br></li>
+</ul>
+
+
+<h3 dir="auto"><a id="user-content-scope" class="anchor" aria-hidden="true" href="#scope"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>SCOPE<br></h3>
+
+
+<p dir="auto">For the implementation of the ATM system I have planned the following features:<br></p>
+
+
+<ul dir="auto">
+<li>Data characteristics to be displayed to the user in the terminal<br></li>
+<li>The to be able to check balance<br></li>
+<li>The to be able to add deposit<br></li>
+<li>The be able to withdraw<br></li>
+<li>The option of displaying balance after depositing<br></li>
+<li>The program displays users name after loged in<br></li>
+<li>The program displays goodbey message after exit the users acount<br></li>
+</ul>
