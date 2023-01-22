@@ -1,5 +1,11 @@
 <h1 dir="auto"><a id="user-content-american-pizza---order-system" class="anchor" aria-hidden="true" href="#american-pizza---order-system"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>ATM Banking Application on Python</h1>
 <h2 dir="auto"><a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>OVERVIEW</h2>
+
+<h2 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Under the hood of ATM software<br></h2>
+
+
+
+
 <p dir="auto">I read a lot of articles on GT and Habré about bank cards, ATMs, and so I decided to make my contribution. Below I will try to talk about how the ATM is arranged in terms of software.</p>
 <h3>What is an ATM?</h3>
 <p>Any ATM is essentially a computer with connected peripherals, an equipment manager and the actual banking application that manages all this economy. All decisions on the issuance of money are made by the server. The ATM only collects information from the client and transmits it to the server.</p>
@@ -12,7 +18,12 @@
 <li>money dispenser<br></li>
 <li>various sensors, backlight<br></li>
 </ul>
-<h3>Who is running this zoo?</h3>
+
+
+<h3 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Who is running this zoo?<br></h3>
+
+
+
 <p>In order for manufacturers not to suffer with writing drivers that no one needs later, and software developers not to suffer from a variety of solutions for managing a particular piece of hardware, it was decided to unify the whole thing.</p>
 
 <p>This is how the CEN / XFS standard or simply XFS appeared, which stands for eXtension For Financial Services.</p>
@@ -20,12 +31,21 @@
 <p>All interaction with the equipment occurs through the XFS Manager API. For example, the Command parameter of the Execute function might have a value for the bill dispenser:</p>
 <p>WFS_CMD_CDM_DISPENSE (a set of money from cassettes)</p>
 <p>WFS_CMD_CDM_PRESENT (issuing a pack to a client)</p>
-<h3>For card reader:</h3>
+
+
+<h3 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>For card reader:<br></h3>
+
+
+
+
 <p>WFS_CMD_IDC_RETAIN_CARD (card capture),</p>
 <p>WFS_CMD_IDC_READ_TRACK (read tracks)</p>
 <p>There are several implementations of XFS managers (including open source ones) written in c ++ and, theoretically, service provider libraries written for one manager should also fit all the others, but in fact sometimes a library written by a specific vendor for a specific XFS manager, works only with this manager.</p>
 <p>There is also Java XFS with its own libraries that are not compatible with classic managers.</p>
-<h3>Banking application</h3>
+
+<h3 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Banking application<br></h3>
+
+
 <p>The banking app is what you see on the screen when you approach the device. It is designed to collect data from the user, send this data to the host (server) and execute a response from the host. As in the case of hardware (XFS), there are industry protocols (NDC / DDC) by which the application communicates with the host, loads the configuration and interprets it.</p>
 
 <p>Any major ATM manufacturer (Wincor, NCR, Diebold) has its own implementation of both XFS and a banking application.</p>
@@ -33,7 +53,9 @@
 
 <p>I will describe the ATM using the example of NDC as the most common protocol in Europ, but a slightly less popular DDC has a similar principle of operation.</p>
 
-<h3>How does it work</h3>
+
+<h3 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How does it work<br></h3>
+
 
 <p>At any given time, the ATM is in one of the following operating modes:</p>
 
@@ -50,8 +72,13 @@
 <p>The first character of this line is the type of the state (denoted by the letters A..Z and also a..z and some characters (,'.?)), it defines the collection. The remaining 24 characters are 8 decimal 3-digit numbers, each of which is a specific state setting (screen number to display, conditions for switching to the state, list of actions). There can be any number of states of the same type.</p>
 <h3>In service mode</h3>
 <p>When the service mode starts, the ATM automatically starts executing state 000. This is usually state A (Card read state). In this state, the ATM displays a screen prompting you to insert a card and puts the card reader into the receiving mode. The state is also responsible for reading the map and branching depending on the results of this operation.</p>
-<p>Below is an example configuration of a typical state A:
-000 A001001011008004002001104</p>
+
+
+
+<h3 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Below is an example configuration of a typical state A:<br></h3>
+
+
+<p>000 A001001011008004002001104</p>
 <ul dir="auto">
 <li>000 - state number<br></li>
 <li>A - state type (Card read state)<br></li>
@@ -64,7 +91,10 @@
   <li>001 - card return condition (immediately after reading or upon completion of the operation)<br></li>
   <li>104 - transition state if the card is unknown to the bank<br></li>
 </ul>
-<p>Let's go through the parameters in more detail:</p>
+
+
+<h3 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Let's go through the parameters in more detail:<br></h3>
+
 <p>State type - everything is clear here: having determined the type of the state, the application knows how to interpret further parameters.
 Screen number - is a link to a string with a text description of the screen that is displayed during the operation of this state.</p>
 
@@ -84,7 +114,10 @@ Screen number - is a link to a string with a text description of the screen that
 
 <p>Card return condition - the ATM can return the cards immediately after reading, or it can do it at the end after all operations are completed.</p>
 
-<p>The rest of the states are arranged in a similar way:</p>
+
+<h3 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The rest of the states are arranged in a similar way:<br></h3>
+
+
 
 <ul dir="auto">
 <li>There are states for reading the sum from the keyboard and placing it in a special internal buffer;<br></li>
@@ -107,7 +140,9 @@ Screen number - is a link to a string with a text description of the screen that
 <p>In a special buffer, the number of banknotes to be dispensed from each cassette is transmitted (if this is a cash withdrawal operation). It is the number of banknotes, because the ATM does not know the denominations of the issued money for it, these are just pieces of paper in cassettes.</p>
 
 <p>Upon completion of the required actions, the application sends a confirmation to the host and goes to the specified state. As a rule, this is the J state already known to us. In case of any failure, the application sends a failure message to the host and waits for a new Transaction Reply with a transition to a new state.</p>
-<h3>Now about screens</h3>
+
+<h3 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Now about screens<br></h3>
+
 
 <p>The ATM screen is a field of 32x16 cells. The screen can contain both graphic information and textual information, which is positioned relative to the cells. Fonts can be double height.</p>
 
