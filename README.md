@@ -251,7 +251,7 @@ The steps were as follows:</p>
 <p dir="auto">For creating a copy of the repository on your account and change it without affecting the original project, use<b>Fork</b> directly from GitHub:</p>
 
 <ul dir="auto">
-<li>On <a href="https://github.com/SergiyKochenko/atm-bunking-app/settings/pages">My Repository Page</a>, press <i>Fork</i> in the top right of the page</li>
+<li>On <a href="https://github.com/SergiyKochenko/atm-bunking-app">My Repository Page</a>, press <i>Fork</i> in the top right of the page</li>
 <li>A forked version of my project will appear in your own repository<br><br></li>
 </ul>
 
@@ -260,7 +260,7 @@ The steps were as follows:</p>
 <p dir="auto">For creating a clone of the repository on your local machine, use<b>Clone</b>:</p>
 
 <ul dir="auto">
-<li>On <a href="https://github.com/SergiyKochenko/atm-bunking-app/settings/pages">My Repository Page</a>, click the <i>Code</i> green button, right above the code window</li>
+<li>On <a href="https://github.com/SergiyKochenko/atm-bunking-app">My Repository Page</a>, click the <i>Code</i> green button, right above the code window</li>
 <li>Chose from <i>HTTPS, SSH and GitClub CLI</i> format and copy (preferably <i>HTTPS</i>)</li>
 <li>In your <i>IDE</i> open <i>Git Bash</i></li>
 <li>Enter the command <code>git clone</code> followed by the copied URL</li>
