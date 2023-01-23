@@ -202,6 +202,10 @@ Screen number - is a link to a string with a text description of the screen that
 </ul>
 
 
+<h3 dir="auto"><a id="user-content-flowcharts" class="anchor" aria-hidden="true" href="#flowcharts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>FLOWCHARTS<br></h3>
+
+<p dir="auto">The Flowchart for my program was created using <b>LucidChart</b> and it visually represents how the system works.<br>
+<a href="/workspace/atm-bunking-app/img/flowchart.png"><img src="/workspace/atm-bunking-app/img/flowchart.png" alt="N|Solid" style="max-width: 100%;"></a></p>
 
 
 
@@ -247,7 +251,7 @@ The steps were as follows:</p>
 <p dir="auto">For creating a copy of the repository on your account and change it without affecting the original project, use<b>Fork</b> directly from GitHub:</p>
 
 <ul dir="auto">
-<li>On <a href="https://github.com/useriasminna/american_pizza_order_system">My Repository Page</a>, press <i>Fork</i> in the top right of the page</li>
+<li>On <a href="https://github.com/SergiyKochenko/atm-bunking-app/settings/pages">My Repository Page</a>, press <i>Fork</i> in the top right of the page</li>
 <li>A forked version of my project will appear in your own repository<br><br></li>
 </ul>
 
@@ -256,7 +260,7 @@ The steps were as follows:</p>
 <p dir="auto">For creating a clone of the repository on your local machine, use<b>Clone</b>:</p>
 
 <ul dir="auto">
-<li>On <a href="https://github.com/useriasminna/american_pizza_order_system">My Repository Page</a>, click the <i>Code</i> green button, right above the code window</li>
+<li>On <a href="https://github.com/SergiyKochenko/atm-bunking-app/settings/pages">My Repository Page</a>, click the <i>Code</i> green button, right above the code window</li>
 <li>Chose from <i>HTTPS, SSH and GitClub CLI</i> format and copy (preferably <i>HTTPS</i>)</li>
 <li>In your <i>IDE</i> open <i>Git Bash</i></li>
 <li>Enter the command <code>git clone</code> followed by the copied URL</li>
