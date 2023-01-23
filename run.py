@@ -54,6 +54,48 @@ def print_menu():
    print("3. Show Balance")
    print("4. Exit")
 
+
+  # print("Your current balance is: €", current_user[-1])
+
+# if __name__ == "__main__":
+#   current_user = cardHolder("","","","","")
+
+def validate_card_Num():
+  list_of_cardHolders = SHEET.worksheet('client').get_all_values()[1:]
+  while True:
+    try:
+      debitCardNum = input("\nPlease insert your debit card: ")
+        #Check against repo
+      debitMatch = [holder for holder in list_of_cardHolders if debitCardNum == holder[0]]
+      if(len(debitMatch) > 0):
+        break
+      else:
+        print("Card number not recognized. Please try again.")
+    except:
+        print("Card number not recognized. Please try again.")
+    return cardHolder(debitMatch[0][0],debitMatch[0][1], debitMatch[0][2], debitMatch[0][3], debitMatch[0][4])
+
+  def validate_user(cardHolder):    
+    while True:
+      try:
+        userPin = input("\nPlease enter your pin:\n ").strip()
+        if userPin.isnumeric() and userPin == cardHolder.get_cardNum():
+          break
+        else:
+          print("Invalid PIN. Please try again.")
+      except:
+        print("Invalid PIN. Please try again.")
+    print("\nWelcome ", current_user[2], " :)")
+    #   try:
+    #     userPin = input("\nPlease enter your pin:\n ").strip()
+    #     if userPin.isnumeric() and userPin == current_user.get_pin():
+    #       break
+    #     else:
+    #       print("Invalid PIN. Please try again.")
+    #   except:
+    #       print("Invalid PIN. Please try again.")
+    # print("\nWelcome ", current_user[2], " :)")
+
 def deposit(cardHolder):
   try:
     deposit = float(input("How much € would you like to deposit:\n "))
@@ -75,73 +117,36 @@ def withdraw(cardHolder):
     print("Invalit input")
 
 def check_balance(cardHolder):
-  print("Your current balance is: €", cardHolder.get_balance())
-
-# if __name__ == "__main__":
-#   current_user = cardHolder("","","","","")
-
-  #Create a repo of cardholders
-list_of_cardHolders = SHEET.worksheet('client').get_all_values()[1:]
-#   # list_of_cardHolders.append(cardHolder("4532772818527395", 1234, "John", "Griffin", 1050.31))
-#   # list_of_cardHolders.append(cardHolder("4532761841325802", 4321, "Emma", "Jones", 500.22))
-#   # list_of_cardHolders.append(cardHolder("5128381368581872", 6543, "Flavia", "Jeckson", 150.79))
-#   # list_of_cardHolders.append(cardHolder("6011188364697109", 8765, "Kira", "Dopkins", 950.93))
-#   # list_of_cardHolders.append(cardHolder("3490693153147110", 2040, "Anna", "Watson", 10.28))
-
-
+  list_of_cardHolders = SHEET.worksheet('client').get_all_values()[1:]
+  current_user = [holder for holder in list_of_cardHolders if cardHolder.get_cardNum() == holder[0]]
+  print(f"Your balance is {current_user[-1]}")
 # # get data fro spreadsheet
 # data = client.worksheet('client').get_all_values()[1:]
 # print(data)
 #   #Prompt user for debit card number
 #   # debitCardNum = ""
-while True:
-    try:
-      debitCardNum = input("\nPlease insert your debit card: ")
-      #Check against repo
-      debitMatch = [holder for holder in list_of_cardHolders if debitCardNum == holder[0]]
-      if(len(debitMatch) > 0):
-        current_user =debitMatch[0]
-        break
-      else:
-        print("Card number not recognized. Please try again.")
-    except:
-      print("Card number not recognized. Please try again.")
-
-#Prompt for PIN
-is_on = True
-while is_on:
+current_user = validate_card_Num()
+validate_user(current_user)
+# option = 0
+while (True):
+  print_menu()
   try:
-    userPin = int(input("\nPlease enter your pin:\n ").strip())
-    if userPin == current_user.get_pin():
-      is_on = False
-    else:
-      print("Invalid PIN. Please try again.")
-      break
+    option = int(input())
   except:
-    print("Invalid PIN. Please try again.")
+    print("Invalid input. Please try again.")
 
-  #Print options
-  print("\nWelcome ", current_user.get_firstName(), " :)")
-  option = 0
-  while (True):
-    print_menu()
-    try:
-      option = int(input())
-    except:
-      print("Invalid input. Please try again.")
-
-    if(option == 1):
+    if (option == 1):
       deposit(current_user)
-    elif(option == 2):
+    elif (option == 2):
       withdraw(current_user)
-    elif(option == 3):
+    elif (option == 3):
       check_balance(current_user)
-    elif(option == 4):
+    elif (option == 4):
       break
     else:
       option = 0
 
-  print("\nThank you. Have a nice day :)")
+print("\nThank you. Have a nice day :)")
   
 # data = SHEET.worksheet('client').get_all_values()[1:]
 # print(data)
