@@ -200,3 +200,94 @@ Screen number - is a link to a string with a text description of the screen that
 <li>The program displays users name after loged in<br></li>
 <li>The program displays goodbey message after exit the users acount<br></li>
 </ul>
+
+
+
+
+
+
+
+<h2 dir="auto"><a id="user-content-deployment" class="anchor" aria-hidden="true" href="#deployment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>DEPLOYMENT</h2>
+
+
+<h3 dir="auto"><a id="user-content-creating-the-website" class="anchor" aria-hidden="true" href="#creating-the-website"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>CREATING THE WEBSITE</h3>
+
+<p dir="auto">I have used the <a href="https://github.com/Code-Institute-Org/python-essentials-template">Code Institute Python Essentials Template</a> for creating a terminal where my Python code will generate its output.
+The steps were as follows:</p>
+
+
+<ul dir="auto">
+<li>Click the <i>Use this template</i> button</li>
+<li>A New Repository page will appear, write a Repository name and a short description and press <i>Create repository from template</i></li>
+<li>Press the green Gitpod button to create your project workspace and start developing your website<br><br></li>
+</ul>
+
+<h3 dir="auto"><a id="user-content-deploying-on-heroku" class="anchor" aria-hidden="true" href="#deploying-on-heroku"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>DEPLOYING ON HEROKU</h3>
+
+<p dir="auto">After finishing developing the program I deployed it on <b>Heroku</b> following the instructions:</p>
+
+<ul dir="auto">
+<li>Create an account and login into <a href="https://id.heroku.com/login" rel="nofollow">Heroku</a> website</li>
+<li>Click "New -&gt; Create new app" button</li>
+<li>Insert your app's Name and Choose your region then click the "Create App" button</li>
+<li>Into the <i>Settings</i> tab go to "Config vars" section and click "Reveal Config Vars"</li>
+<li>Enter the PORT in the KEY section and 8000 for its value, then click "Add"</li>
+<li>Go to "Buildpacks" section and click "Add buildpack"<br></li>
+<li>Firstly add the <b>Python</b> buildpack then <b>NodeJs</b></li>
+<li>Into the <i>Deploy</i> tab go to "Deployment method" and select <b>Github</b></li>
+<li>After that go to "App connected to GitHub" and look for your GitHub repository name to link it</li>
+<li>You can now choose to either manually or automatically deploy your app to Heroku.</li>
+<li>With automatic deploys enabled, Heroku will build a new version of the app each time a change has been pushed to the repository</li>
+<li>Manual deploys means your app will be updated only when you manually click to deploy it</li>
+<li>When the deploying is finished, a link will be provided to you for accessing your app</li>
+</ul>
+
+<h3 dir="auto"><a id="user-content-fork-the-repository" class="anchor" aria-hidden="true" href="#fork-the-repository"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>FORK THE REPOSITORY</h3>
+
+<p dir="auto">For creating a copy of the repository on your account and change it without affecting the original project, use<b>Fork</b> directly from GitHub:</p>
+
+<ul dir="auto">
+<li>On <a href="https://github.com/useriasminna/american_pizza_order_system">My Repository Page</a>, press <i>Fork</i> in the top right of the page</li>
+<li>A forked version of my project will appear in your own repository<br><br></li>
+</ul>
+
+<h3 dir="auto"><a id="user-content-clone-the-repository" class="anchor" aria-hidden="true" href="#clone-the-repository"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>CLONE THE REPOSITORY</h3>
+
+<p dir="auto">For creating a clone of the repository on your local machine, use<b>Clone</b>:</p>
+
+<ul dir="auto">
+<li>On <a href="https://github.com/useriasminna/american_pizza_order_system">My Repository Page</a>, click the <i>Code</i> green button, right above the code window</li>
+<li>Chose from <i>HTTPS, SSH and GitClub CLI</i> format and copy (preferably <i>HTTPS</i>)</li>
+<li>In your <i>IDE</i> open <i>Git Bash</i></li>
+<li>Enter the command <code>git clone</code> followed by the copied URL</li>
+<li>Your clone was created</li>
+</ul>
+
+<h2 dir="auto"><a id="user-content-credits" class="anchor" aria-hidden="true" href="#credits"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>CREDITS</h2>
+
+<ul dir="auto">
+<li>The code for clearing the terminal was taken from <a href="https://stackoverflow.com/questions/2084508/clear-terminal-in-python" rel="nofollow">stackoverflow</a></li>
+<li>I learned how to work with data and time strings from <a href="https://www.educative.io/edpresso/how-to-convert-a-string-to-a-date-in-python" rel="nofollow">educative.io</a></li>
+<li>The code for linking to the Google Spreadsheet and manipulating it was taken and adapted from the Code Institute Love Sandwiches tutorial</li>
+</ul>
+
+<h2 dir="auto"><a id="user-content-tools" class="anchor" aria-hidden="true" href="#tools"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>TOOLS</h2>
+
+<p dir="auto"><a href="https://github.com/">GitHub</a> - used for hosting the source code of the program<br>
+<a href="https://gitpod.io/" rel="nofollow">Gitpod Dev Environment</a> - used for testing the program<br>
+<a href="http://pep8online.com/" rel="nofollow">PEP8 Validator</a> - used for validating the python code<br>
+<a href="https://dashboard.heroku.com/" rel="nofollow">Heroku</a> - used for deploying the project<br>
+<a href="https://www.lucidchart.com/" rel="nofollow">LucidChart</a> - used for creating the Flowchart
+<a href="https://favicon.io/" rel="nofollow">Favicon.io</a> - used for generating the website favicon<br>
+<a href="https://www.diffchecker.com/" rel="nofollow">Diffchecker</a> - used for comparing the code<br>
+<a href="https://validator.w3.org/#validate_by_uri+with_options" rel="nofollow">HTML - W3C HTML Validator</a> - used for validating the HTML<br>
+<a href="https://jigsaw.w3.org/css-validator/#validate_by_uri" rel="nofollow">CSS - Jigsaw CSS Validator</a> - used for validating the CSS<br></p>
+
+
+<h2 dir="auto"><a id="user-content-acknowledgements" class="anchor" aria-hidden="true" href="#acknowledgements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>ACKNOWLEDGEMENTS</h2>
+
+<ul dir="auto">
+<li>Code Institute for all the material and support offered<br></li>
+<li>Thanks to my classroom teacher Irene Neville and my classmates for great tips and their willingness to help me as much as possible with the problems encountered during the development of the project<br></li>
+<li>Slack community for great involvement in helping each other<br></li>
+</ul>
