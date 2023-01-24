@@ -279,7 +279,8 @@ The steps were as follows:</p>
 
 <p dir="auto"><a href="https://github.com/">GitHub</a> - used for hosting the source code of the program<br>
 <a href="https://gitpod.io/" rel="nofollow">Gitpod Dev Environment</a> - used for testing the program<br>
-<a href="http://pep8online.com/" rel="nofollow">PEP8 Validator</a> - used for validating the python code<br>
+<a href="http://pep8online.com/" rel="nofollow">pep8online Validator</a> - used for validating the python code<br>
+<a href="https://pep8ci.herokuapp.com/" rel="nofollow">pep8ci Validator CI Python Liner</a> - used for validating the python code<br>
 <a href="https://dashboard.heroku.com/" rel="nofollow">Heroku</a> - used for deploying the project<br>
 <a href="https://www.lucidchart.com/" rel="nofollow">LucidChart</a> - used for creating the Flowchart
 <a href="https://favicon.io/" rel="nofollow">Favicon.io</a> - used for generating the website favicon<br>
