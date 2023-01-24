@@ -1,5 +1,4 @@
 import gspread
-import pyfiglet
 from cardHolder import cardHolder
 from google.oauth2.service_account import Credentials
 SCOPE = [
