@@ -1,4 +1,5 @@
 import gspread
+import pyfiglet
 from cardHolder import cardHolder
 from google.oauth2.service_account import Credentials
 SCOPE = [
@@ -24,29 +25,17 @@ surename = client.col_values(4)
 # print(surename)
 balance = client.col_values(5)
 # print(balance)
-logo = (
-  """
+print(
+          """
 
-░█████╗░████████╗███╗░░░███╗
-██╔══██╗╚══██╔══╝████╗░████║
-███████║░░░██║░░░██╔████╔██║
-██╔══██║░░░██║░░░██║╚██╔╝██║
-██║░░██║░░░██║░░░██║░╚═╝░██║
-╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░░░░╚═╝
-"""
+          ░█████╗░████████╗███╗░░░███╗
+          ██╔══██╗╚══██╔══╝████╗░████║
+          ███████║░░░██║░░░██╔████╔██║
+          ██╔══██║░░░██║░░░██║╚██╔╝██║
+          ██║░░██║░░░██║░░░██║░╚═╝░██║
+          ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░░░░╚═╝
+          """
 )
-
-logo = (
-      """
-         AAA  TTTTTTTT MM    MM
-        AAAAA    TT    MMM  MMM
-       AA   AA   TT    MM MM MM
-      AAAAAAAAA  TT    MM    MM
-     AAA     AAA TT    MM    MM
-      """
-  )
-print(logo)
-
 
 def print_menu():
     # Print options to the user
