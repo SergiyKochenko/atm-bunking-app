@@ -50,15 +50,16 @@ def deposit(cardHolder):
   try:
     deposit = float(input("How much € would you like to deposit: "))
     cardHolder.set_balance(cardHolder.get_balance() + deposit)
-    print("Thank you for your deposit. Your new balance is: €", str(cardHolder.get_balance()))
+    message = "Thank you for your deposit. Your new balance is: €"
+    print(message, str(cardHolder.get_balance()))
   except ValueError():
-      print("Invalid input")
+    print("Invalid input")
 
 
 def withdraw(cardHolder):
   try:
     withdraw = float(input("How much € would you like to withdraw: "))
-    # Chkesk if user has enough mony
+    # Check if user has enough money
     if (cardHolder.get_balance() < withdraw):
       print("Insufficient balance :(")
     else:
