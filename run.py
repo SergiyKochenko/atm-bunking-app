@@ -1,38 +1,30 @@
 import gspread
-
 from cardHolder import cardHolder
-
 from google.oauth2.service_account import Credentials
-
-
-
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
     ]
-
+    
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('client_database')
-
 
 client = SHEET.worksheet('client')
 
 cardNumber = client.col_values(1)
 # print(cardNumber)
 pin = client.col_values(2)
-#print(pin)
+# print(pin)
 name = client.col_values(3)
-#print(name)
+# print(name)
 surename = client.col_values(4)
-#print(surename)
+# print(surename)
 balance = client.col_values(5)
-#print(balance)
-
-
+# print(balance)
 
 logo = (
       """
@@ -45,9 +37,8 @@ logo = (
   )
 print(logo)
 
-
 def print_menu():
-   #Print options to the user
+   # Print options to the user
    print("Please chose from one of the follewing options...")
    print("1. Deposit")
    print("2. Withdraw")
@@ -65,7 +56,7 @@ def deposit(cardHolder):
 def withdraw(cardHolder):
   try:
     withdraw = float(input("How much € would you like to withdraw: "))
-    #Chkesk if user has enough mony
+    # Chkesk if user has enough mony
     if(cardHolder.get_balance() < withdraw):
       print("Insufficient balance :(")
     else:
@@ -80,15 +71,15 @@ def check_balance(cardHolder):
 if __name__ == "__main__":
   current_user = cardHolder("","","","","")
 
-  #Create a repo of cardholders
+  # Create a repo of cardholders
   list_of_cardHolders = []
-  list_of_cardHolders.append(cardHolder("4532772818527395", 1234, "John", "Griffin", 1050.31))
+  list_of_cardHolders.append(cardHolder("4532772818527395", 1234, "John", "Griffin", 1050.30))
   list_of_cardHolders.append(cardHolder("4532761841325802", 4321, "Emma", "Jones", 500.22))
   list_of_cardHolders.append(cardHolder("5128381368581872", 6543, "Flavia", "Jeckson", 150.79))
   list_of_cardHolders.append(cardHolder("6011188364697109", 8765, "Kira", "Dopkins", 950.93))
   list_of_cardHolders.append(cardHolder("3490693153147110", 2040, "Anna", "Watson", 10.28))
-
-  #Prompt user for debit card number
+  
+  # Prompt user for debit card number
   debitCardNum = ""
   while True:
     try:
@@ -103,7 +94,7 @@ if __name__ == "__main__":
     except:
       print("Card number not recognized. Please try again.")
 
-#Prompt for PIN
+# Prompt for PIN
 is_on = True
 while is_on:
   try:
@@ -116,7 +107,7 @@ while is_on:
   except:
     print("Invalid PIN. Please try again.")
 
-  #Print options
+  # Print options
   print("\nWelcome ", current_user.get_firstName(), " :)")
   option = 0
   while (True):
@@ -138,4 +129,3 @@ while is_on:
       option = 0
 
   print("\nThank you. Have a nice day :)")
-  
