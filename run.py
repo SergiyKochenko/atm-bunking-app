@@ -87,7 +87,7 @@ if __name__ == "__main__":
   debitCardNum = ""
   while True:
     try:
-      debitCardNum = input("\nPlease insert your debit card: ")
+      debitCardNum = input("\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐢𝐧𝐬𝐞𝐫𝐭 𝐲𝐨𝐮𝐫 𝐝𝐞𝐛𝐢𝐭 𝐜𝐚𝐫𝐝: ")
       # Check against repo
       debitMatch = [holder for holder in list_of_cardHolders if holder.cardNum == debitCardNum]
       if (len(debitMatch) > 0):
@@ -102,7 +102,7 @@ if __name__ == "__main__":
   is_on = True
   while is_on:
     try:
-      userPin = int(input("\nPlease enter your pin: ").strip())
+      userPin = int(input("\n𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝘆𝗼𝘂𝗿 𝗣𝗜𝗡: ").strip())
       if (current_user.get_pin() == userPin):
         is_on = False
       else:
