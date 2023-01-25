@@ -108,7 +108,7 @@ if __name__ == "__main__":
       else:
         print("Invalid PIN. Please try again.")
         break
-    except ValueError():
+    except ValueError:
       print("Invalid PIN. Please try again.")
 
   # Print options
@@ -118,7 +118,7 @@ if __name__ == "__main__":
     print_menu()
     try:
       option = int(input())
-    except:
+    except ValueError:
       print("Invalid input. Please try again.")
 
     if (option == 1):
