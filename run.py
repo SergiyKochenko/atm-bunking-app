@@ -46,30 +46,30 @@ def print_menu():
 
 
 def deposit(cardHolder):
-  try:
-    deposit = float(input("How much € would you like to deposit: "))
-    cardHolder.set_balance(cardHolder.get_balance() + deposit)
-    message = "Thank you for your deposit. Your new balance is: €"
-    print(message, str(cardHolder.get_balance()))
-  except ValueError():
-    print("Invalid input")
+    try:
+        deposit = float(input("How much € would you like to deposit: "))
+        cardHolder.set_balance(cardHolder.get_balance() + deposit)
+        message = "Thank you for your deposit. Your new balance is: €"
+        print(message, str(cardHolder.get_balance()))
+    except ValueError():
+        print("Invalid input")
 
 
 def withdraw(cardHolder):
-  try:
-    withdraw = float(input("How much € would you like to withdraw: "))
-    # Check if user has enough money
-    if (cardHolder.get_balance() < withdraw):
-      print("Insufficient balance :(")
-    else:
-      cardHolder.set_balance(cardHolder.get_balance() - withdraw)
-      print("You're good to go! Thank you :)")
-  except ValueError():
-    print("Invalit input")
+    try:
+        withdraw = float(input("How much € would you like to withdraw: "))
+        # Check if user has enough money
+        if (cardHolder.get_balance() < withdraw):
+            print("Insufficient balance :(")
+        else:
+            cardHolder.set_balance(cardHolder.get_balance() - withdraw)
+            print("You're good to go! Thank you :)")
+    except ValueError():
+        print("Invalit input")
 
 
 def check_balance(cardHolder):
-  print("Your current balance is: €", cardHolder.get_balance())
+    print("Your current balance is: €", cardHolder.get_balance())
 
 
 if __name__ == "__main__":
