@@ -47,7 +47,7 @@ def validate_card_Num():
       if card_num and len(user) > 0:
         break
       elif not card_num:
-        print("Please enter card number")
+        print("\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐢𝐧𝐬𝐞𝐫𝐭 𝐲𝐨𝐮𝐫 𝐝𝐞𝐛𝐢𝐭 𝐜𝐚𝐫𝐝: ")
       else:
         print("Card number not recognized")
     return cardHolder(user[0][0], user[0][1], user[0][2], user[0][3], user[0][4])
@@ -58,9 +58,9 @@ def validate_user(cardHolder):
   tries = 0
   while tries < 3:
     tries += 1
-    pin_code = input("\nEnter PIN: ")
+    pin_code = input("\n𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝘆𝗼𝘂𝗿 𝗣𝗜𝗡: ")
     if not pin_code:
-      print("please enter pin, try again")
+      print("\nPlease enter PIN, try again.")
       status = False
     elif not pin_code.isnumeric():
       print("Only numbers allowed")
@@ -69,11 +69,11 @@ def validate_user(cardHolder):
       status = True
       break
     elif tries == 3:
-      print("Sorry you've exceede you trial limit")
+      print("Sorry you've exceeded you trial limit")
       status = False
       break
     else:
-      print("Incorrect pin.")
+      print("Incorrect PIN.")
       status = False
     
   return status
@@ -83,7 +83,7 @@ def deposit(cardHolder):
   list_of_cardHolders = SHEET.worksheet("client").get_all_values()[1:]
   user = [holder for holder in list_of_cardHolders if cardHolder.get_cardNum() == holder[0]]
   while True:
-    amount = input("How much € would you like to deposit: ")
+    amount = input("How much would you like to deposit: €")
     if not amount:
       print("Please enter an amount, try again.")
       status = False
@@ -104,7 +104,7 @@ def withdraw(cardHolder):
   list_of_cardHolders = SHEET.worksheet("client").get_all_values()[1:]
   user = [holder for holder in list_of_cardHolders if cardHolder.get_cardNum() == holder[0]]
   while True:
-    amount = input("Enter amount: ")
+    amount = input("How much would you like to withdraw: €")
     if not amount:
       print("Please enter an amount you would like to withdraw, try again.")
       status = False
@@ -112,7 +112,7 @@ def withdraw(cardHolder):
       print("Enter only amount in figures.")
       status = False
     elif float(cardHolder.get_balance()) < float(amount):
-      print("Insoffician balance. Try again.")
+      print("Insufficient balance. Try again.")
       status = False
 
     else:
@@ -162,4 +162,4 @@ while True:
         break
     else:
         option = 0
-print("\nThank you. Have a nice day :)")
+print("\nThank you. Have a nice time :)")
