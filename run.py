@@ -1,3 +1,4 @@
+import sys
 import gspread
 
 from cardHolder import cardHolder
@@ -31,7 +32,7 @@ print(
 
 def print_menu():
     # Print options to the user
-    print("\nPlease chose from one of the follewing options...")
+    print("Please chose from one of the follewing options...")
     print("1. Deposit")
     print("2. Withdraw")
     print("3. Show Balance")
@@ -67,17 +68,18 @@ def validate_user(cardHolder):
             print("\nPlease enter PIN, try again.")
             status = False
         elif not pin_code.isnumeric():
-            print("Only numbers allowed")
+            print("\nOnly numbers allowed. Insert your card and try again.")
             status = False
+            sys.exit()
         elif pin_code.isnumeric() and pin_code == user[0][1]:
             status = True
             break
         elif tries == 3:
-            print("Sorry you've exceeded you trial limit")
+            print("\nSorry you've exceeded you trial limit")
             status = False
-            break
+            sys.exit()
         else:
-            print("Incorrect PIN.")
+            print("\nIncorrect PIN.")
             status = False
     return status
 
@@ -90,12 +92,12 @@ def deposit(cardHolder):
         if cardHolder.get_cardNum() == holder[0]
     ]
     while True:
-        amount = input("How much would you like to deposit: € ")
+        amount = input("\nHow much would you like to deposit: € ")
         if not amount:
-            print("Please enter an amount, try again.")
+            print("\nPlease enter an amount, try again.")
             status = False
         elif not amount.isnumeric():
-            print("Enter only amount in figures.")
+            print("\nEnter only amount in figures.")
             status = False
         else:
             status = True
@@ -116,15 +118,15 @@ def withdraw(cardHolder):
         if cardHolder.get_cardNum() == holder[0]
     ]
     while True:
-        amount = input("How much would you like to withdraw: € ")
+        amount = input("\nHow much would you like to withdraw: € ")
         if not amount:
-            print("Please enter an amount to withdraw, try again.")
+            print("\nPlease enter an amount to withdraw, try again.")
             status = False
         elif not amount.isnumeric():
-            print("Enter only amount in figures.")
+            print("\nEnter only amount in figures.")
             status = False
         elif float(cardHolder.get_balance()) < float(amount):
-            print("Insufficient balance. Try again.")
+            print("\nInsufficient balance. Try again.")
             status = False
         else:
             status = True
@@ -132,7 +134,7 @@ def withdraw(cardHolder):
             cardHolder.set_balance(new_balance)
             cur_user = SHEET.worksheet("client").find(user[0][0])
             SHEET.worksheet("client").update_cell(cur_user.row, 5, new_balance)
-            print("Successfully withdraw from your account.")
+            print("\nSuccessfully withdraw from your account.")
             break
     return True
 
@@ -159,7 +161,7 @@ def show_user_name(cardHolder):
 
 current_user = validate_card_Num()
 
-# print(validate_user(current_user))
+print(validate_user(current_user))
 # print(show_balance(current_user))
 
 
@@ -170,16 +172,16 @@ while True:
     try:
         option = int(input())
     except ValueError:
-        print("Invalid input. Please try again.")
+        print("\nInvalid input. Please try again.")
     if option == 1:
         deposit(current_user)
     elif option == 2:
         withdraw(current_user)
     elif option == 3:
         show_balance(current_user)
-        print("Your current balance is: €", show_balance(current_user))
+        print("\nYour current balance is: €", show_balance(current_user))
     elif option == 4:
         break
     else:
         option = 0
-print("\nThank you. Have a nice time!! :)")
+print("Thank you. Have a nice time!! :)")
