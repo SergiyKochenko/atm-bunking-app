@@ -159,29 +159,35 @@ def show_user_name(cardHolder):
     return user[0][2]
 
 
-current_user = validate_card_Num()
+def main():
+    """
+    Runs all program functions
+    """
+    current_user = validate_card_Num()
 
-print(validate_user(current_user))
-# print(show_balance(current_user))
+    validate_user(current_user)
+    # print(show_balance(current_user))
+
+    print("\nWelcome ", show_user_name(current_user), " :)")
+    option = 0
+    while True:
+        print_menu()
+        try:
+            option = int(input())
+        except ValueError:
+            print("\nInvalid input. Please try again.")
+        if option == 1:
+            deposit(current_user)
+        elif option == 2:
+            withdraw(current_user)
+        elif option == 3:
+            show_balance(current_user)
+            print("\nYour current balance is: €", show_balance(current_user))
+        elif option == 4:
+            break
+        else:
+            option = 0
+    print("𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮. 𝐇𝐚𝐯𝐞 𝐚 𝐧𝐢𝐜𝐞 𝐝𝐚𝐲❗")
 
 
-print("\nWelcome ", show_user_name(current_user), " :)")
-option = 0
-while True:
-    print_menu()
-    try:
-        option = int(input())
-    except ValueError:
-        print("\nInvalid input. Please try again.")
-    if option == 1:
-        deposit(current_user)
-    elif option == 2:
-        withdraw(current_user)
-    elif option == 3:
-        show_balance(current_user)
-        print("\nYour current balance is: €", show_balance(current_user))
-    elif option == 4:
-        break
-    else:
-        option = 0
-print("𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮. 𝐇𝐚𝐯𝐞 𝐚 𝐧𝐢𝐜𝐞 𝐝𝐚𝐲❗")
+main()
