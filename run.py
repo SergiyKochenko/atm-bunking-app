@@ -79,7 +79,7 @@ def validate_user(cardHolder):
             status = False
             sys.exit()
         else:
-            print("\nIncorrect PIN.")
+            print("\nIncorrect PIN, try again.")
             status = False
     return status
 
