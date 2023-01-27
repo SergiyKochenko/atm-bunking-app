@@ -184,4 +184,4 @@ while True:
         break
     else:
         option = 0
-print("Thank you. Have a nice time!! :)")
+print("𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮. 𝐇𝐚𝐯𝐞 𝐚 𝐧𝐢𝐜𝐞 𝐝𝐚𝐲❗")
