@@ -40,6 +40,7 @@ def print_menu():
 
 
 def validate_card_Num():
+    # Card number validation of the user
     list_of_cardHolders = SHEET.worksheet("client").get_all_values()[1:]
     while True:
         card_num = input("\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐢𝐧𝐬𝐞𝐫𝐭 𝐲𝐨𝐮𝐫 𝐜𝐚𝐫𝐝: ")
@@ -54,6 +55,7 @@ def validate_card_Num():
 
 
 def validate_user(cardHolder):
+    # Pin code number validation
     list_of_cardHolders = SHEET.worksheet("client").get_all_values()[1:]
     user = [
         holder
@@ -85,6 +87,7 @@ def validate_user(cardHolder):
 
 
 def deposit(cardHolder):
+    # Deposit menu function and validation of numeric
     list_of_cardHolders = SHEET.worksheet("client").get_all_values()[1:]
     user = [
         holder
@@ -111,6 +114,7 @@ def deposit(cardHolder):
 
 
 def withdraw(cardHolder):
+    # Withdraw menu function and validation of numeric & over draft balance
     list_of_cardHolders = SHEET.worksheet("client").get_all_values()[1:]
     user = [
         holder
@@ -140,6 +144,7 @@ def withdraw(cardHolder):
 
 
 def show_balance(cardHolder):
+    # Check balance function
     list_of_cardHolders = SHEET.worksheet("client").get_all_values()[1:]
     user = [
         holder
