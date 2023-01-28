@@ -37,9 +37,6 @@
 
 <h3 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>For card reader:<br></h3>
 
-
-
-
 <p>WFS_CMD_IDC_RETAIN_CARD (card capture),</p>
 <p>WFS_CMD_IDC_READ_TRACK (read tracks)</p>
 <p>There are several implementations of XFS managers (including open source ones) written in c ++ and, theoretically, service provider libraries written for one manager should also fit all the others, but in fact sometimes a library written by a specific vendor for a specific XFS manager, works only with this manager.</p>
@@ -145,7 +142,6 @@ Screen number - is a link to a string with a text description of the screen that
 
 <h3 dir="auto"><a id="user-content-goals" class="anchor" aria-hidden="true" href="#goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Now about screens<br></h3>
 
-
 <p>The ATM screen is a field of 32x16 cells. The screen can contain both graphic information and textual information, which is positioned relative to the cells. Fonts can be double height.</p>
 
 <p>The screen description is a line of text interspersed with control characters such as screen clearing, cursor position, font size. In most modern banks today, text is used only when entering amounts, and in other cases, the screen is just a single picture. However, there are also completely text screens.</p>
@@ -160,31 +156,25 @@ Screen number - is a link to a string with a text description of the screen that
 
 <h1 dir="auto"><a id="user-content-testing" class="anchor" aria-hidden="true" href="#testing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a></h1>
 
-
-
 <h1 dir="auto"><a id="user-content-testing" class="anchor" aria-hidden="true" href="#testing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Card numbers and PIN Codes:<br>
-
-For testing the App use listed numbers of mock user accounts.
-
+<p>For testing the App use listed numbers of mock user accounts.<p>
 <ol dir="auto">
 <li>Card Number: 4532772818527395 PIN Code: 1234<br></li>
 <li>Card Number: 4532761841325802 PIN Code: 4321<br></li>
 <li>Card Number: 5128381368581872 PIN Code: 6543<br></li>
 <li>Card Number: 6011188364697109 PIN Code: 8765<br></li>
 <li>Card Number: 3490693153147110 PIN Code: 2040<br></li>
-</ol>
+</ol></h1>
 
-</h1>
+<h2 dir="auto"><a id="user-content-uxui" class="anchor" aria-hidden="true" href=""><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The fully deployed project can be accesed at: <a href="https://atm-bunkinng-app.herokuapp.com/" rel="nofollow">this link</a></h2>
+<img src="/workspace/atm-bunking-app/img/amiresponsive.png" alt="N|Solid" style="max-width: 100%;">
 
+<h2 dir="auto"><a id="user-content-flowcharts" class="anchor" aria-hidden="true" href=""><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>FLOWCHARTS<br></h2>
 
+<p dir="auto">The Flowchart for my program was created using <b>LucidChart</b> and it visually represents how the system works.<br>
+<a href="/workspace/atm-bunking-app/img/flowchart.png"><img src="/workspace/atm-bunking-app/img/flowchart.png" alt="N|Solid" style="max-width: 100%;"></a></p>
 
-
-
-<h2 dir="auto"><a id="user-content-uxui" class="anchor" aria-hidden="true" href="#uxui"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The fully deployed project can be accesed at: <a href="https://atm-bunkinng-app.herokuapp.com/" rel="nofollow">this link</a></h2>
-
-<img src="/workspace/atm-bunking-app/img/deployed_site.png" alt="N|Solid" style="max-width: 100%;">
-
-<h3 dir="auto"><a id="user-content-surfacedesign" class="anchor" aria-hidden="true" href="#surfacedesign"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>SURFACE/DESIGN<br></h3>
+<h3 dir="auto"><a id="user-content-surfacedesign" class="anchor" aria-hidden="true" href=""><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>SURFACE/DESIGN<br></h3>
 
 <p dir="auto">The entering system displays pages of the steps for the menu options need to insert users Card and enter users PIN. Every option contains information relevant to the user and a menu that will help him navigate through the program. User has to enter the number in the menu chose from 1 to 4.<br></p>
 
@@ -235,11 +225,30 @@ For testing the App use listed numbers of mock user accounts.
 <p dir="auto">Chose option four. Showing the message to user: "Thank you. Have a nice day!" The terminal have ended of all operations.<br>
 All your changes with your account data going to docs.google.com/spreadsheets/ store and read from current user account the data like card number, pin code, balance, name.  <br></p>
 
-<img src="/workspace/atm-bunking-app/img/7-check_balance.png" width="80%" style="max-width: 100%;">
+<img src="/workspace/atm-bunking-app/img/8-exit_program.png" width="80%" style="max-width: 100%;">
+<img src="/workspace/atm-bunking-app/img/9-google_spredsheet.png" width="80%" style="max-width: 100%;">
 
+<h2 dir="auto"><a id="user-content-pizza-menu-page" class="anchor" aria-hidden="true" href=""><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Validation process on the user interface</h2>
+
+<p dir="auto">Card number validation:<br></p>
+One time validation users card number, if not valid, - the terminal return card to the user (system exit).
+<img src="/workspace/atm-bunking-app/img/10-card_number_validation.png" width="80%" style="max-width: 100%;">
+
+<p dir="auto">PIN number validation:<br></p>
+<p dir="auto">Three times limit entering PIN code, if not valid, - the terminal return card to the user (system exit).<br></p>
+<img src="/workspace/atm-bunking-app/img/11-three_times_limit_enter_pin.png" width="80%" style="max-width: 100%;">
+
+<p dir="auto">PIN if not a number, show massage to the user "Only numbers allowed. Insert your card and try again." - the terminal return card to the user (system exit).<br></p>
+<img src="/workspace/atm-bunking-app/img/12- pin_if_not_number.png" width="80%" style="max-width: 100%;">
+
+<p dir="auto">Withdraw validation:<br></p>
+<p dir="auto">If balance is less then withdraw show massage to the user "Insufficient balance. Try again."<br></p>
+<img src="/workspace/atm-bunking-app/img/13-insufficient_balance.png" width="80%" style="max-width: 100%;">
+
+<p dir="auto">If entry not a figures, show massage to the user "Enter only amount in figures."<br></p>
+<img src="/workspace/atm-bunking-app/img/14-only_figures.png" width="80%" style="max-width: 100%;">
 
 <h2 dir="auto"><a id="user-content-uxui" class="anchor" aria-hidden="true" href="#uxui"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>UX/UI</h2>
-
 
 <ul dir="auto">
 <li>The program should be intuitive to navigate<br></li>
@@ -263,12 +272,9 @@ All your changes with your account data going to docs.google.com/spreadsheets/ s
 <li>As a user, I want to see my balance after deposit<br></li>
 </ul>
 
-
 <h3 dir="auto"><a id="user-content-scope" class="anchor" aria-hidden="true" href="#scope"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>SCOPE<br></h3>
 
-
 <p dir="auto">For the implementation of the ATM system I have planned the following features:<br></p>
-
 
 <ul dir="auto">
 <li>Data characteristics to be displayed to the user in the terminal<br></li>
@@ -280,24 +286,12 @@ All your changes with your account data going to docs.google.com/spreadsheets/ s
 <li>The program displays goodbey message after exit the users acount<br></li>
 </ul>
 
-
-<h3 dir="auto"><a id="user-content-flowcharts" class="anchor" aria-hidden="true" href="#flowcharts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>FLOWCHARTS<br></h3>
-
-<p dir="auto">The Flowchart for my program was created using <b>LucidChart</b> and it visually represents how the system works.<br>
-<a href="/workspace/atm-bunking-app/img/flowchart.png"><img src="/workspace/atm-bunking-app/img/flowchart.png" alt="N|Solid" style="max-width: 100%;"></a></p>
-
-
-
-
-
 <h2 dir="auto"><a id="user-content-deployment" class="anchor" aria-hidden="true" href="#deployment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>DEPLOYMENT</h2>
-
 
 <h3 dir="auto"><a id="user-content-creating-the-website" class="anchor" aria-hidden="true" href="#creating-the-website"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>CREATING THE WEBSITE</h3>
 
 <p dir="auto">I have used the <a href="https://github.com/Code-Institute-Org/python-essentials-template">Code Institute Python Essentials Template</a> for creating a terminal where my Python code will generate its output.
 The steps were as follows:</p>
-
 
 <ul dir="auto">
 <li>Click the <i>Use this template</i> button</li>
@@ -366,33 +360,35 @@ The steps were as follows:</p>
 <a target="_blank" rel="noopener noreferrer" href="/workspace/atm-bunking-app/img/cl_python_liner_validation.png"><img src="/workspace/atm-bunking-app/img/cl_python_liner_validation.png" width="90%" style="max-width: 100%;"></a>
 <a target="_blank" rel="noopener noreferrer" href="/workspace/atm-bunking-app/img/cl_python_liner_validation2.png"><img src="/workspace/atm-bunking-app/img/cl_python_liner_validation2.png" width="90%" style="max-width: 100%;"></a></p>
 
-<h2 dir="auto"><a id="user-content-debugging" class="anchor" aria-hidden="true" href="#debugging"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Debugging</h2>
+<p dir="auto">Lighthouse Test:</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/workspace/atm-bunking-app/img/15-lighthouse_test.png"><img src="/workspace/atm-bunking-app/img/15-lighthouse_test.png" width="90%" style="max-width: 100%;"></a>
 
+<h2 dir="auto"><a id="user-content-debugging" class="anchor" aria-hidden="true" href="#debugging"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Debugging</h2>
 
 <h3 dir="auto"><a id="user-content-fixed-bugs" class="anchor" aria-hidden="true" href="#fixed-bugs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Fixed Bugs</h3>
 
-
 <p dir="auto">In the user’s menu, one bug was found during testing. Option number three was not showing a balance on the screen terminal. The solution found to solve the bug is to inject: print(). See the image below.</p>
-
 
 <a target="_blank" rel="noopener noreferrer" href="/workspace/atm-bunking-app/img/bug_fixed.png"><img src="/workspace/atm-bunking-app/img/bug_fixed.png" width="90%" style="max-width: 100%;"></a>
 
-
 <h2 dir="auto">Formatting</h2>
-
 
 <p dir="auto">To guarantee consistent line breaks, whitespaces and indentation, run.py and cardHolder.py were formatted using <a href="https://black.vercel.app/" rel="nofollow">Black Playground</a></p>
 
-
-
 <h3 dir="auto"><a id="user-content-unfixed-bugs" class="anchor" aria-hidden="true" href="#unfixed-bugs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Unfixed Bugs</h3>
 
-<p dir="auto">No unfixed bugs to date.</p>
-
-
-
-
-
+<p dir="auto">There are a few numbers of unfixed bugs</p>
+<br>
+<p>In the run.py file:</p>
+<ul dir="auto">
+<li>47: E501 line too long (82 > 79 characters)<br></li>
+<li>54: E501 line too long (81 > 79 characters)<br></li>
+</ul>
+<br>
+<p>In the cardholder.py file:</p>
+<ul dir="auto">
+<li>10: E501 line too long (82 > 79 characters)<br></li>
+</ul>
 
 <h2 dir="auto"><a id="user-content-tools" class="anchor" aria-hidden="true" href="#tools"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>TOOLS</h2>
 
@@ -406,13 +402,8 @@ The steps were as follows:</p>
 <a href="https://validator.w3.org/#validate_by_uri+with_options" rel="nofollow">HTML - W3C HTML Validator</a> - used for validating the HTML<br>
 <a href="https://jigsaw.w3.org/css-validator/#validate_by_uri" rel="nofollow">CSS - Jigsaw CSS Validator</a> - used for validating the CSS<br>
 <a href="https://fsymbols.com/text-art/" rel="nofollow">Symbols ☯ Emoji</a> - used for generating the symbols for terminal<br>
+<a href="https://ui.dev/amiresponsive" rel="nofollow">Am I Responsive</a> - used for responsive on different devices<br>
 <a href="https://black.vercel.app/" rel="nofollow">Black Playground</a> - used to guarantee consistent line breaks, whitespaces and indentation, python3 code were formatted<br></p>
-
-
-
-
-
-
 
 <h2 dir="auto"><a id="user-content-acknowledgements" class="anchor" aria-hidden="true" href="#acknowledgements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>ACKNOWLEDGEMENTS</h2>
 
